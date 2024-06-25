@@ -76,50 +76,6 @@ parser.add_argument('--lamb',
                     help='adjust the norm factor to avoid outlier (default: 0.0)')
 args = parser.parse_args()
 
-
-# def train(model, device, train_loader, criterion, optimizer, epoch, args):
-#     running_loss = 0
-#     start_time = time.time()
-#     model.train()
-#     M = len(train_loader)
-#     total = 0
-#     correct = 0
-#     for i, (images, labels) in enumerate(train_loader):
-#         optimizer.zero_grad()
-#         labels = labels.to(device)
-#         images = images.to(device)
-#         outputs = model(images)
-#         mean_out = outputs.mean(1)
-#         if args.TET:
-#             loss = TET_loss(outputs,labels,criterion,args.means,args.lamb)
-#         else:
-#             loss = criterion(mean_out,labels)
-#         running_loss += loss.item()
-#         loss.mean().backward()
-#         optimizer.step()
-#         total += float(labels.size(0))
-#         _, predicted = mean_out.cpu().max(1)
-#         correct += float(predicted.eq(labels.cpu()).sum().item())
-#     return running_loss, 100 * correct / total
-
-# @torch.no_grad()
-# def test(model, test_loader, device):
-#     correct = 0
-#     total = 0
-#     model.eval()
-#     for batch_idx, (inputs, targets) in enumerate(test_loader):
-#         inputs = inputs.to(device)
-#         outputs = model(inputs)
-#         mean_out = outputs.mean(1)
-#         _, predicted = mean_out.cpu().max(1)
-#         total += float(targets.size(0))
-#         correct += float(predicted.eq(targets).sum().item())
-#         if batch_idx % 100 == 0:
-#             acc = 100. * float(correct) / float(total)
-#             print(batch_idx, len(test_loader), ' Acc: %.5f' % acc)
-#     final_acc = 100 * correct / total
-#     return final_acc
-
 if __name__ == '__main__':
     train_dataset, val_dataset = data_loaders.build_dvscifar('cifar-dvs')
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True,
