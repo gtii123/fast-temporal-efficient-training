@@ -10,7 +10,7 @@ import torch.optim
 from models.VGG_models import *
 from models.resnet_models import *
 import data_loaders
-from functions import TET_loss, seed_all, get_logger
+from functions import TET_loss, TET_loss_250, seed_all, get_logger
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3,4,5,6,7"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
