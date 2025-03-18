@@ -12,3 +12,5 @@ The Following Setup is tested and it is working:
 ## Steps
 1. traing VGGSNN models by main_training_parallel.py
 2. calculating fisher information by calculating_fisherinfo.py
+## Receiving
+I am very happy,because my papaer have been received. If my papaer can help you, you can cite it.
