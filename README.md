@@ -16,15 +16,14 @@ The Following Setup is tested and it is working:
 I am very happy,because my papaer have been received. If my papaer can help you, you can cite it.
 
 ## CITION
-@article{HAN2025110401,  
-title = {Exploring temporal information dynamics in Spiking Neural Networks: Fast Temporal Efficient Training},   
-journal = {Journal of Neuroscience Methods},   
-volume = {417},   
-pages = {110401},   
-year = {2025},   
-issn = {0165-0270},   
-doi = {https://doi.org/10.1016/j.jneumeth.2025.110401},  
-url = {https://www.sciencedirect.com/science/article/pii/S0165027025000421},  
-author = {Changjiang Han and Li-Juan Liu and Hamid Reza Karimi},  
-keywords = {Brain-inspired computing, Spiking neural networks, Brain simulation, Vision, Signal processing},  
+@article{HAN2025110401,
+ author = {Changjiang Han and Li-Juan Liu and Hamid Reza Karimi},  
+ title = {Exploring temporal information dynamics in Spiking Neural Networks: Fast Temporal Efficient Training},   
+ journal = {Journal of Neuroscience Methods},   
+ volume = {417},   
+ pages = {110401},   
+ year = {2025},   
+ issn = {0165-0270},   
+ doi = {https://doi.org/10.1016/j.jneumeth.2025.110401},  
+ url = {https://www.sciencedirect.com/science/article/pii/S0165027025000421},   
 }
