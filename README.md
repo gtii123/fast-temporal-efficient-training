@@ -15,6 +15,7 @@ The Following Setup is tested and it is working:
 ## Receiving
 I am very happy,because my papaer have been received. If my papaer can help you, you can cite it.
 
+## CITION
 @article{HAN2025110401,
 title = {Exploring temporal information dynamics in Spiking Neural Networks: Fast Temporal Efficient Training},
 journal = {Journal of Neuroscience Methods},
